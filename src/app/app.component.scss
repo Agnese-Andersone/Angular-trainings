@@ -1,0 +1,66 @@
+
+.header {
+    background-color: #f2f5f0;
+    background: url('C:/Users/BOB/IdeaProjects/HTML_CSS/my-app/src/assets/images/skola_fons.jpg');
+    background-position-y: center;
+    background-size: cover;
+    color: #264d04;
+    font-family: Apple Chancery, cursive;
+    text-align: center;
+    
+}
+.header .title h1 {
+    line-height: 100px;
+    margin: 0;
+}
+
+.inner {
+    width: 700px;
+    margin: 0 auto;
+}
+
+.header .inner .navigation {
+    height: 60px;
+    border-bottom: 1px solid #fff;
+}
+
+.header.inner.navigation.left {
+    
+    display: inline-block;
+    border-radius: 80%;
+}
+.header .inner .navigation .left img {
+border-radius: 80%;
+width: 60px;
+height: 60px;
+float: left;
+}
+
+.header .inner .navigation .right {
+    display: inline-block;  
+    
+}
+
+.header .inner .navigation a {
+    color: #064e24;
+    font-style: italic;
+    text-decoration: none;
+    font-weight: bolder;
+    margin: 20px;
+    display: inline-block;
+    float:right;
+}
+@media screen and (max-width: 700px) {
+    .inner {
+        width: 100%;
+        margin: 0;
+        padding: 0 10px;
+        box-sizing: border-box;
+    }
+
+    .main .categories .categoryContainer .categoryItem {
+        display: block;
+        width: 100%;
+        margin-top: 40px;
+    }
+}

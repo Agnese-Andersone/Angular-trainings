@@ -1,0 +1,8 @@
+<p *ngIf="shopService.items">Šajā veikalā ir: {{shopService.items.length}} prece(s)</p>
+<p *ngIf="shopService.cart">
+    Jūsu grozā ir {{shopService.cart.length}}prece(s).
+    <a [routerLink]="['/shop/cart']">Apskatīt grozu</a>
+</p>
+<p *ngIf="!shopService.items">Shop is closed!</p>
+<app-product *ngFor="let product of shopService.items" [product]="product" [isCartMode]="false"></app-product>
+

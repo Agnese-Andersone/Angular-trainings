@@ -1,0 +1,5 @@
+  
+<h4>{{product.name}}</h4>
+<p>{{product.description}}</p>
+<p>{{product.price}} eur</p>
+<button *ngIf="!isCartMode" (click)="shopService.addProductToCart(product)">Pirkt</button>

@@ -1,0 +1,6 @@
+<h2>Shopping cart</h2>
+
+<app-product *ngFor="let product of shopService.cart" [product]="product" [isCartMode]="true"></app-product>
+<br />
+
+<a routerLink="/shop"><button class="btn btn-success pull-right" > Atpakaļ uz veikalu</button></a>

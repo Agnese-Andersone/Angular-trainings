@@ -1,0 +1,74 @@
+.menu {
+    display: flex;
+    justify-content: space-evenly;
+}
+.main {
+    background-color: rgb(250, 252, 251);
+}
+
+.main .categories .description {
+    text-align: center;
+    padding: 50px 30px;
+}
+
+.main .categories .categoryContainer {
+    text-align: center;
+}
+
+.main .categories .categoryContainer .categoryItem {
+    display: inline-block;
+    width: 200px;
+    border: 1px solid #044409;
+    border-radius: 3px;
+    position: relative;
+}
+
+.main .categories .categoryContainer .categoryItem .title {
+    font-weight: bold;
+    font-size: 22px;
+    text-decoration: none;
+    color: rgb(4, 88, 32);
+}
+
+.main .categories .categoryContainer .categoryItem .description {
+    padding: 10px;
+    text-decoration: none;
+    color: rgb(7, 136, 46);
+}
+
+.main .categories .categoryContainer .categoryItem .image {
+    background-size: cover;
+    background-position: center;
+    height: 100px;
+}
+
+.image.matematika {
+    background: url('/assets/images/matematika.jpg');
+}
+
+.image.alfabets {
+    background: url('/assets/images/alfabets.jpg');
+    
+}
+.image.dabaszinibas {
+    background: url('/assets/images/dabaszinibas.jpg');
+
+}
+.image.saraksts {
+    background: url('/assets/images/saraksts.jpg');
+
+}
+
+
+.main .categories .categoryContainer .categoryItem .icon {
+    width: 40px;
+    height: 40px;
+    background-image: url('/assets/images/checkmark.jpg');
+    
+    border: 5px solid #fff;
+    border-radius: 50%;
+    position: absolute;
+    top: -25px;
+    left: 50%;
+    margin-left: -25px;
+}

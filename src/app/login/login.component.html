@@ -1,0 +1,25 @@
+<form [formGroup]="form">
+    <div>
+        <label for="login">Login</label> <br />
+        <input id="login" type="text" [ngClass]="{'valid', true}" formControlName="login" />
+        
+        <div *ngIf="form.controls.login.touched == true && form.controls.login.status == 'INVALID'">
+            <div *ngIf="form.controls.login.errors.required">Fill the field!
+            </div>
+            <div *ngIF="form.controls.login.errors.email">Should be valid email address
+            </div>
+        </div>
+    </div>
+    <div>
+        <label for="psw">Password</label> <br />
+        <input id="psw" type="password" formControlName="password" />
+        <span *ngIf="form.controls.password.status == 'INVALID'">This field is required!</span>
+    </div>
+    <button (click)="submit()">Login</button>
+    <span *ngIf="form.status =='VALID'">Form is ready to be submitted.</span>    
+</form>
+
+
+<!--
+<div>{{login}}</div>
+<div>{{password}}</div> -->
